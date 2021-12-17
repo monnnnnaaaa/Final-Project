@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/contact.css">
+
+
+</head>
+<body>
+
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#mm">About</a></li>
+                   <li><a href="/html/contact.html">Contact Us</a></li>
+               </ul>
+            </div> 
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+         </nav>
+      </section>
+      <div class="container">
+        <h2>Contact Us</h2>
+        <div id="error_message"></div>
+        <form id="myform" onsubmit="return validation()">
+            <input type="text" name="firstname" id="firstname" placeholder="First name">
+            <input type="text" name="lastname" id="lastname" placeholder="Last name">
+            <input type="text" name="emailaddress" id="emailaddress" placeholder="Email Address">
+            <textarea id="question" rows="3" placeholder="Enter your Question"></textarea>
+            <input type="submit">
+        </form>
+    </div>
+    <script src="/js/java.js"></script>
+   
+    </body>
+</html>
